@@ -5,7 +5,22 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-10-31T22:22:14Z</updated>
+  <updated>2019-11-04T12:53:11Z</updated>
+  <entry>
+    <title>Spring Framework 5.2.1 and 5.1.11 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/11/04/spring-framework-5-2-1-and-5-1-11-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Stéphane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2019-11-02:3858</id>
+    <updated>2019-11-04T12:53:11Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework 5.2.1 and 5.1.11 are available now.&lt;/p&gt;
+&lt;p&gt;The first maintenance release of the 5.2 line includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.2.1.RELEASE"&gt;over 35 fixes and improvements&lt;/a&gt;. Spring Framework 5.1.11 &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.1.11.RELEASE"&gt;includes 7 selected fixes and improvements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As usual, we&amp;rsquo;ll follow up shortly with corresponding Spring Boot releases (2.2.1 and 2.1.10).&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.2.1.RELEASE/spring-framework-reference"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: Hibernate guru Vlad Mihalcea</title>
     <link rel="alternate" href="https://spring.io/blog/2019/10/31/a-bootiful-podcast-hibernate-guru-vlad-mihalcea" />
@@ -1508,39 +1523,6 @@ public class LoanCheckApplication {&#xD;
 &lt;/ol&gt;
 &lt;p&gt;&amp;mdash;&lt;/p&gt;&lt;h3&gt;&lt;a href="#footnotes" class="anchor" name="footnotes"&gt;&lt;/a&gt;Footnotes&lt;/h3&gt;
 &lt;p&gt;[^1]: The microservice code in this repository is written and packaged using &lt;a href="https://maven.apache.org/"&gt;Maven&lt;/a&gt;, &lt;a href="https://spring.io/projects/spring-boot"&gt;Spring Boot&lt;/a&gt;, and &lt;a href="https://spring.io/projects/spring-cloud-stream"&gt;Spring Cloud Stream&lt;/a&gt;. At runtime the code relies on &lt;a href="https://kafka.apache.org/"&gt;Kafka&lt;/a&gt;, &lt;a href="https://zookeeper.apache.org/"&gt;Zookeeper&lt;/a&gt;, &lt;a href="https://www.rabbitmq.com/"&gt;RabbitMQ&lt;/a&gt;, and &lt;a href="https://hub.docker.com/r/obsidiandynamics/kafdrop"&gt;KafDrop&lt;/a&gt; (a Docker image by by Obsidian Dynamics). Everything in this list has been provided for you - you don&amp;rsquo;t need to install them.&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - October 14th, 2019</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/10/15/this-week-in-spring-october-14th-2019" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2019-10-15:3835</id>
-    <updated>2019-10-15T04:37:13Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! WHEW! What a week! Last week was the &lt;em&gt;insane&lt;/em&gt; SpringOne Platform 2019 event, from which I am &lt;em&gt;still&lt;/em&gt; recovering! Then I flew home, hosted Spring team member and Micrometer lead and friend Tommy Ludwig in San Francisco, and prepared to fly out for meetings and user group appearances on Monday (in Stuttgart, Germany) and Tuesday (in Amsterdam). &lt;/p&gt;
-&lt;p&gt;I prepared, and got into the Uber going to San Francisco airport when I got a call from my brother saying my 81-year-old dad wasn&amp;rsquo;t doing well (thanks to everyone for the well-wishes!) and was rushed to the hospital. I had to, regretfully, cancel my live appearances in those countries. I am SO sorry for those I disappointed. I was very happy to be able to do a few of those meetings remotely. Thanks to everyone who indulged me and supported me as I flew to Los Angeles to be with my father.&lt;/p&gt;
-&lt;p&gt;Anyway, friends, tons of stuff to get to this week! &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/10/14/spring-cloud-stream-demystified-and-simplified"&gt;Spring Cloud Stream - demystified and simplified&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/10/14/spring-initializr-0-8-0-available-now"&gt;Spring Initializr 0.8.0 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/10/11/a-bootiful-podcast-spring-mad-scientist-andy-clement-on-aspectj-spel-eclipse-graal-and-more"&gt;A Bootiful Podcast: Spring mad scientist Andy Clement on AspectJ, SpEL, Eclipse, Graal and more&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://content.pivotal.io/blog/azure-spring-cloud-a-new-way-to-run-spring-boot-apps-atop-kubernetes"&gt;Azure Spring Cloud: A New Way to Run Spring Boot Apps Atop Kubernetes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Want to see a &lt;em&gt;really&lt;/em&gt; compelling demo &lt;a href="https://www.linkedin.com/posts/pivotal-software-inc._dicks-sporting-goods-does-a-live-production-activity-6588191097191743488-sPDE/"&gt;for Pivotal PAS (a CLoud Foundry distro)? Watch &lt;em&gt;Dick&amp;rsquo;s Sporting Goods&lt;/em&gt; show you how it&amp;rsquo;s done&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://dutchitchannel.nl/632678/pivotal-en-microsoft-introduceren-private-preview-van-azure-spring-cloud.html"&gt;Pivotal and Microsoft are introducing preview versions of Azure Spring Cloud (Dutch article)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/aless_falappa/status/1183412994006507520?s=12"&gt;As usual I love the updates being done in the Spring Boot support for Netbeans&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I love the Jetbrains team&amp;rsquo;s Roman Elizarov&amp;rsquo;s epic &lt;a href="https://twitter.com/relizarov/status/1183306431812034560"&gt;explainer on all things Kotlin and coroutines&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://dev.to/azure/add-real-time-to-your-java-app-with-azure-signalr-service-3p8"&gt;Add Real-time to your Java App with Azure SignalR Service - DEV Community &#x1f469;‍&#x1f4bb;&#x1f468;‍&#x1f4bb;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Learn more about Azure Spring Cloud &lt;a href="https://azure.microsoft.com/en-us/blog/introducing-azure-spring-cloud-fully-managed-service-for-spring-boot-microservices/"&gt;and sign up for the private beta&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://medium.com/swlh/spring-data-jpa-projection-support-for-native-queries-a13cd88ec166"&gt;Spring Data JPA Projection support for native queries&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Last week Dr. Syer, Juergen Hoeller and &lt;a href="https://twitter.com/wattersjames/status/1182055158743752705"&gt;I hung out at the Azure Spring Cloud booth at SpringOne Platform 2019&lt;/a&gt;. It was fun. And production-centric.&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.pscp.tv/w/1mnxezwrOAnKX?t=5m22s"&gt;I love this interview with, among others Joe Beda and James Watters; enjoy!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/badnima/status/1181935983979307008?s=12"&gt;I had so much fun emceeing the keynote presentation this year at SpringOne Platform&lt;/a&gt;. Thanks everyone for making it fun, despite my terrible jokes! I got to hang out with &lt;a href="https://twitter.com/starbuxman/status/1181960300775522304?s=12"&gt;some of my favorite people&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Interesting post on Azure Spring Cloud on the Register: &lt;a href="https://www.theregister.co.uk/AMP/2019/10/09/azure_spring_cloud/?__twitter_impression=true"&gt;through the winds of winter, Microsoft sees a dream of spring&amp;hellip; Azure Spring Cloud, that is &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/wattersjames/status/1181947825615179782?s=12"&gt;Want to know why Netflix is using Spring Boot?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/aclairefication/status/1181950198056132615?s=12"&gt;Want a great recap of a lot of the content from last week, at SpringOne Platform?&lt;/a&gt; Check out the tweets from @aclairefication. I did! That&amp;rsquo;s how I learned that, according to Stephane Maldini, the &lt;a href="https://twitter.com/aclairefication/status/1181950198056132615"&gt;Spring team cloned me and sent me all around the world&lt;/a&gt;! I HAVE A CLONE WOOHOOO!! :-D&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

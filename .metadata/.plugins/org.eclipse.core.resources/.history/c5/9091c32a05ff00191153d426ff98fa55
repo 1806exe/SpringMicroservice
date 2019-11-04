@@ -73,7 +73,7 @@ public class CurrencyConversionController {
 		headers.add("User-Agent", "Conversion demo Class");
 		headers.add("Accept-Language", "en-us");
 		HttpEntity<CurrencyConversion> entity = new HttpEntity<CurrencyConversion>(currencyConversion, headers);
-		ResponseEntity<CurrencyConversion> responseEntity = restTemplate.postForEntity(REQUEST_URI, currencyConversion, CurrencyConversion.class);
+		ResponseEntity<CurrencyConversion> responseEntity = restTemplate.postForEntity(REQUEST_URI, entity, CurrencyConversion.class);
 		// responseEntity.status(HttpStatus.CREATED);
 		return responseEntity;
 	}

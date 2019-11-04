@@ -29,9 +29,9 @@ public class CurrencyAddController {
 		 System.out.println("exchange values ENTITY " + exchangeValue);
 		//repo.save(exchangeValue);
 		
-		ExchangeValue exchangeValue1 = repo.save(exchangeValue);	
+		ExchangeValue exchangeValue2=repo.save(exchangeValue);	
 		ResponseEntity<ExchangeValue> responseEntity = new ResponseEntity<ExchangeValue>(
-				exchangeValue1, HttpStatus.CREATED);
+				exchangeValue2, HttpStatus.CREATED);
 		return responseEntity;
 	}
 	
