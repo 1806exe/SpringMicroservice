@@ -1,0 +1,29 @@
+package com.springwebservice.com.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.springwebservice.com.bean.Person;
+import com.springwebservice.com.services.PersonService;
+
+@RestController
+public class PersonController {
+	
+	@Autowired
+	PersonService personService;
+	
+	@GetMapping(value = "/persons-service")
+	public List<Person> getPersons(){
+		return personService.getAllPersons();
+	}
+	
+	@PostMapping(value = "/persons-service")
+	public Person addPersonService(@RequestBody Person person) {
+		Person person = personService.addPerson(person)
+	}
+}

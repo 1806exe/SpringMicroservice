@@ -1,0 +1,5 @@
+package com.currencyexchange.repository;
+
+public interface CurrencyExchnageRepository {
+
+}

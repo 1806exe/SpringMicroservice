@@ -1,0 +1,9 @@
+package com.myconnection.bean;
+
+public class MyConnection {
+
+	public MyConnection() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

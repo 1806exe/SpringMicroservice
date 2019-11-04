@@ -1,0 +1,5 @@
+package com.springwebservice.com.bean;
+
+public class Person {
+
+}

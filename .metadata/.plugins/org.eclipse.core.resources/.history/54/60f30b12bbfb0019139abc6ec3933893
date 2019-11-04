@@ -1,0 +1,5 @@
+package com.springwebservice.com.myexceptions;
+
+public class PersonExceptionHandler {
+
+}
