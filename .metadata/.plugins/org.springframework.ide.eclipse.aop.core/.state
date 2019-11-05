@@ -4,6 +4,7 @@
 <aop-project name="SpringCurrencyExchangeService"/>
 <aop-project name="spring-cloud-config-server"/>
 <aop-project name="SpringCurrencyConversionService"/>
+<aop-project name="SpringDoctors"/>
 <aop-project name="SpringRestPerson"/>
 <aop-project name="spring-limits"/>
 <aop-project name="SpringWebService"/>

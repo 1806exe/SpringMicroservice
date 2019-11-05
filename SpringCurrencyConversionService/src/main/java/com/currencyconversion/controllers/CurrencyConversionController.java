@@ -5,11 +5,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,6 +24,9 @@ import com.currencyconversion.bean.CurrencyConversion;
 
 @RestController
 public class CurrencyConversionController {
+	
+	@Autowired
+	CurrencyExchangeProxy d_proxy;
 	
 	@GetMapping("/currency-conversion-msg")
 	public String message() {
@@ -50,12 +55,26 @@ public class CurrencyConversionController {
 		CurrencyConversion currencyConversion = responseEntity.getBody();
 		currencyConversion.setQuantity(BigDecimal.valueOf(Integer.parseInt(quantity)));		
 		currencyConversion.setTotalCalculatedAmount(currencyConversion.getConversionMultiple().multiply(currencyConversion.getQuantity()));
-		
-		
+				
 		return currencyConversion;
+	
+	}
+	
+	
+	
+	@GetMapping("/currency-convert-feign/to/{to}/from/{from}/quantity/{quantity}")
+	public CurrencyConversion convertCurrencyFeign(@PathVariable String to, @PathVariable String from,
+			@PathVariable String quantity) {
 		
+		CurrencyConversion currencyConversion = d_proxy.getExchange(from, to);
+		currencyConversion.setQuantity(BigDecimal.valueOf(Integer.parseInt(quantity)));
+		currencyConversion.setTotalCalculatedAmount(currencyConversion.getConversionMultiple().multiply(currencyConversion.getQuantity()));
+		
+		return currencyConversion;	
 		
 	}
+	
+	
 	
 	@PostMapping("/conversionvalues")
 	public CurrencyConversion addCurrencyConversion(@RequestBody CurrencyConversion currencyConversion) {
@@ -78,6 +97,31 @@ public class CurrencyConversionController {
 		// responseEntity.status(HttpStatus.CREATED);
 		return responseEntity;
 	}
+	
+	
+	@PostMapping("/conversionvalues-feign/entity")
+	public ResponseEntity<CurrencyConversion> addCurrencyConversionEntityFeign(@RequestBody CurrencyConversion currencyConversion) {
+		CurrencyConversion currencyConversion2 = d_proxy.create(currencyConversion);
+		
+		ResponseEntity<CurrencyConversion> entity = new ResponseEntity<CurrencyConversion>(currencyConversion, HttpStatus.CREATED);
+	
+		return entity;
+	}
+	
+	
+	
+	@DeleteMapping("/conversionvalues-feign/delete/entity/{id}")
+	public ResponseEntity<CurrencyConversion> deleteCurrencyConversionEntityFeign(@PathVariable Long id) {
+		CurrencyConversion currencyConversion2 = d_proxy.delete(id);
+		
+		ResponseEntity<CurrencyConversion> entity = new ResponseEntity<CurrencyConversion>(currencyConversion2, HttpStatus.OK);
+
+		return entity;
+	}
+	
+	
+	
+	
 	
 //	@GetMapping("/conversion-all")
 //	public List<CurrencyConversion> getAllCurrencyConversionEntity(){
