@@ -1,8 +1,11 @@
 package com.currencyexchange.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,6 +36,16 @@ public class CurrencyAddController {
 		ResponseEntity<ExchangeValue> responseEntity = new ResponseEntity<ExchangeValue>(
 				exchangeValue1, HttpStatus.CREATED);
 		return responseEntity;
+	}
+	
+	@GetMapping("/values/all")
+	public List<ExchangeValue>  getAllExcahangeValuesEntity(List<ExchangeValue> exchangeValue){
+		List<ExchangeValue> exchangeValues = repo.findAll();
+		
+//		ResponseEntity<ExchangeValue> responseEntity = new ResponseEntity<ExchangeValue>(
+//				ex1, HttpStatus.CREATED);
+		
+		return exchangeValues;
 	}
 	
 	

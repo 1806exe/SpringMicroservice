@@ -10,4 +10,5 @@ import com.currencyexchange.bean.ExchangeValue;
 @Repository
 public interface CurrencyExchnageRepository extends JpaRepository<ExchangeValue, Long> {
 	Optional<ExchangeValue> findByFromAndTo(String from, String to);
+	
 }

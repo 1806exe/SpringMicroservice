@@ -2,6 +2,7 @@ package com.currencyconversion.controllers;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.http.HttpEntity;
@@ -77,5 +78,18 @@ public class CurrencyConversionController {
 		// responseEntity.status(HttpStatus.CREATED);
 		return responseEntity;
 	}
+	
+//	@GetMapping("/conversion-all")
+//	public List<CurrencyConversion> getAllCurrencyConversionEntity(){
+//		CurrencyConversion currencyConversion = 
+//		String REQUEST_URI = "http://localhost:8000/values/all";
+//		RestTemplate restTemplate = new RestTemplate();
+//		MultiValueMap<String, String> headers = new HttpHeaders();
+//		headers.add("User-Agent", "Conversion demo Class");
+//		headers.add("Accept-Language", "en-us");
+//		HttpEntity<CurrencyConversion> entity = new HttpEntity<CurrencyConversion>(currencyConversion, headers);
+//		ResponseEntity<CurrencyConversion> responseEntity = restTemplate.getForEntity(REQUEST_URI, List<>);
+//		return null;
+//	}
 	
 }
