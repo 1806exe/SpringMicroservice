@@ -24,6 +24,7 @@ public class DoctorController {
 	public List<Doctor> getDoctorsForHospital(@PathVariable int hospitalId){
 		
 		return doctorRepository.findAllByHospitalId(hospitalId);
+		
 	}
 	
 	

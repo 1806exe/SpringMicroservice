@@ -20,9 +20,6 @@ import com.hospital.repository.HospitalRepository;
 public class HospitalController {
 	
 	@Autowired
-	HospitalRepository repo;
-	
-	@Autowired
 	HospitalControllerProxy d_proxy;
 	
 	@GetMapping("/hospitals/{hospitalId}")

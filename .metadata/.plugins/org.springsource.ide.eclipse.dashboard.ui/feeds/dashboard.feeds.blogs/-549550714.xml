@@ -5,7 +5,34 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-11-05T05:28:00Z</updated>
+  <updated>2019-11-05T17:16:00Z</updated>
+  <entry>
+    <title>This Week in Spring - November 5, 2019</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/11/05/this-week-in-spring-november-5-2019" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-11-05:3862</id>
+    <updated>2019-11-05T17:16:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I&amp;rsquo;m in Antwerp, Belgium for the epic Devoxx event. I was in Singapore for Devoxx Belgium 2018, and so I missed this event. I am so happy to be here this year. &lt;/p&gt;
+&lt;p&gt;I finished a &amp;ldquo;deep dive&amp;rdquo; session this morning with an amazing crowd of people who hung out with me for 3 hours to talk about Reactive Spring. I&amp;rsquo;ve got two more one-hour talks on Thursday, &amp;ldquo;Bootiful Testing,&amp;rdquo; and &amp;ldquo;Bootiful Kotlin.&amp;rdquo; I&amp;rsquo;m so looking forward to seeing everyone for those talks as well. &lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve got a ton of things to get to this week so let&amp;rsquo;s! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/11/04/azure-spring-cloud-is-now-in-public-preview"&gt;Azure Spring Cloud Is Now In Public Preview&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/11/05/spring-data-moore-sr1-and-lovelace-sr12-released"&gt;Spring Data Moore SR1 and Lovelace SR12 released.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/11/04/spring-security-5-2-1-and-5-1-7-released"&gt;Spring Security 5.2.1 and 5.1.7 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/11/04/spring-cloud-stream-composed-functions-or-eip"&gt;Spring Cloud Stream - Composed Functions or EIP&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/11/04/spring-framework-5-2-1-and-5-1-11-available-now"&gt;Spring Framework 5.2.1 and 5.1.11 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/10/31/a-bootiful-podcast-hibernate-guru-vlad-mihalcea"&gt;A Bootiful Podcast: Hibernate guru Vlad Mihalcea&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/10/31/spring-cloud-stream-event-routing"&gt;Spring Cloud Stream - Event Routing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://content.pivotal.io/practitioners/getting-started-with-spring-cloud-stream"&gt;Getting Started With Spring Cloud Stream&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is a &lt;a href="https://youtu.be/3jd7JbgNeE8"&gt;Spring Boot, Hibernate, and MySQL tutorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I liked this - and laughed some! - &lt;a href="https://www.marcobehler.com/guides/spring-transaction-management-unconventional-guide"&gt;Spring Transaction Management: An unconventional guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://wimdeblauwe.wordpress.com/2019/10/20/spring-boot-and-thymeleaf-with-css-javascript-processing-using-gulp/"&gt;Spring Boot and Thymeleaf with CSS/JavaScript processing using Gulp &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Data Moore SR1 and Lovelace SR12 released</title>
     <link rel="alternate" href="https://spring.io/blog/2019/11/05/spring-data-moore-sr1-and-lovelace-sr12-released" />
@@ -1390,24 +1417,6 @@ class GreetingResponse {&#xD;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: Bytebuddy founder Rafael Winterhalter</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/10/18/a-bootiful-podcast-bytebuddy-founder-rafael-winterhalter" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2019-10-18:3840</id>
-    <updated>2019-10-18T08:39:51Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of a Bootiful Podcast! In this week&amp;rsquo;s installment Josh Long (&lt;a href="http://twitter.com/starbuxman"&gt;@starbuxman&lt;/a&gt;) talks to Rafael Winterhalter (&lt;a href="http://twitter.com/rafaelcodes"&gt;@rafaelcodes&lt;/a&gt;) about Bytebuddy; Mockito; the JVM; bytecode; Oslo, Norway; and so much more.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://bytebuddy.net/"&gt;ByteBuddy&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://site.mockito.org"&gt;Mockito&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://JavaZone.no"&gt;JavaZone&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/698141305&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
