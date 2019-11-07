@@ -13,4 +13,5 @@
 <aop-project name="SpringRestPerson"/>
 <aop-project name="spring-limits"/>
 <aop-project name="SpringWebService"/>
+<aop-project name="SpringNetflixAPIServer"/>
 </aop-reference-model>
