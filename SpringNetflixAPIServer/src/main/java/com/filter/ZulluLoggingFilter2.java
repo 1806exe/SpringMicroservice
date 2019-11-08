@@ -23,7 +23,7 @@ public class ZulluLoggingFilter2 extends ZuulFilter{
 		
 		HttpServletRequest request = RequestContext.getCurrentContext().getRequest();
 		logger.info("request ---> {} request URI -> {} " + request, request.getRequestURI());
-		logger.info("PRE filter called ", Level.INFO);
+		logger.info("POST filter called ", Level.INFO);
 		System.out.println("************************** request -->{} request URI-> {} " + request + " " + request.getRequestURI()+ "*****************************************");
 		return null;
 	}
@@ -40,13 +40,14 @@ public class ZulluLoggingFilter2 extends ZuulFilter{
 	}
 	
 	@Override
+	public String filterType() {
+		return "post";
+	}
+	
+	@Override
 	public int filterOrder() {
 		return 2;
 	}
 	
-	@Override
-	public String filterType() {
-		return "pre";
-	}
 	
 }

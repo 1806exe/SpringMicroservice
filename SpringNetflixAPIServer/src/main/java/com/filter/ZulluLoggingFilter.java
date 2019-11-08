@@ -42,13 +42,15 @@ public class ZulluLoggingFilter extends ZuulFilter{
 	}
 	
 	@Override
+	public String filterType() {
+		return "pre";
+	}
+	
+	@Override
 	public int filterOrder() {
 		return 1;
 	}
 	
-	@Override
-	public String filterType() {
-		return "pre";
-	}
+
 	
 }

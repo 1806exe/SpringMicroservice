@@ -10,11 +10,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.currencyconversion.bean.CurrencyConversion;
 @RibbonClient(value = "currency-exchange-service")
-@FeignClient(value = "currency-exchange-service")
+@FeignClient(value = "netflix-zuul-api-gateway-server")
 public interface CurrencyExchangeProxy {
 	
 	
-	@GetMapping("/currency-exchange/to/{to}/from/{from}")
+//	@GetMapping("/currency-exchange/to/{to}/from/{from}")
+//	public CurrencyConversion getExchange(
+//			@PathVariable("from") String from, @PathVariable("to") String to);
+	
+	@GetMapping("/currency-exchange-service/currency-exchange/to/{to}/from/{from}")
 	public CurrencyConversion getExchange(
 			@PathVariable("from") String from, @PathVariable("to") String to);
 	
