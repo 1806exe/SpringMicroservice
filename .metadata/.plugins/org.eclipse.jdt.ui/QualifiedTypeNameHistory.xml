@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="com.hospital.repository.Hospital_Rel_Repository"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
 <fullyQualifiedTypeName name="com.relation.Hospital_Rel"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.hospital.controllers.HospitalControllerProxy"/>
 <fullyQualifiedTypeName name="com.hospital.beans.Hospital"/>
@@ -39,7 +37,6 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.springframework.web.reactive.function.server.ServerResponse"/>
 <fullyQualifiedTypeName name="org.springframework.http.server.reactive.ServerHttpResponse"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
 <fullyQualifiedTypeName name="org.springframework.cloud.gateway.filter.GlobalFilter"/>
 <fullyQualifiedTypeName name="reactor.core.publisher.Mono"/>
 <fullyQualifiedTypeName name="org.springframework.web.reactive.config.EnableWebFlux"/>
@@ -53,11 +50,14 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="com.filter.ZulluLoggingFilter"/>
 <fullyQualifiedTypeName name="ch.qos.logback.classic.Level"/>
-<fullyQualifiedTypeName name="org.slf4j.Logger"/>
-<fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
 <fullyQualifiedTypeName name="com.netflix.zuul.context.RequestContext"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="com.netflix.zuul.ZuulFilter"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="org.slf4j.Logger"/>
+<fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="brave.sampler.Sampler"/>
 </qualifiedTypeNameHistroy>
