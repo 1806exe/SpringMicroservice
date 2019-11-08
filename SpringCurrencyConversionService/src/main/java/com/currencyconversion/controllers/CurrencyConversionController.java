@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -27,6 +29,7 @@ public class CurrencyConversionController {
 	
 	@Autowired
 	CurrencyExchangeProxy d_proxy;
+	
 	
 	@GetMapping("/currency-conversion-msg")
 	public String message() {
@@ -62,10 +65,12 @@ public class CurrencyConversionController {
 	
 	
 	// feign 
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
 	@GetMapping("/currency-convert-feign/to/{to}/from/{from}/quantity/{quantity}")
 	public CurrencyConversion convertCurrencyFeign(@PathVariable String to, @PathVariable String from,
 			@PathVariable String quantity) {
 		
+		logger.info("path varibale in exchange service --> {} from:- " + from + "to" + to + "quantity" + quantity);
 		CurrencyConversion currencyConversion = d_proxy.getExchange(from, to);
 		currencyConversion.setQuantity(BigDecimal.valueOf(Integer.parseInt(quantity)));
 		currencyConversion.setTotalCalculatedAmount(currencyConversion.getConversionMultiple().multiply(currencyConversion.getQuantity()));

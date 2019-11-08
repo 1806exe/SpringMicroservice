@@ -3,6 +3,8 @@ package com.currencyexchange.controllers;
 import java.math.BigDecimal;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,16 +24,18 @@ public class CurrencyExchangeController {
 	@Autowired
 	CurrencyExchnageRepository repository;
 	
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
+	
 	@GetMapping("/currency-exchange/to/{to}/from/{from}")
-	public ExchangeValue getExchangeValue(@PathVariable String to, @PathVariable String from) {
-		Optional<ExchangeValue>optional=repository.findByFromAndTo(from, to);
-		if (optional.isPresent()) {
-			ExchangeValue exchangeValue = repository.findByFromAndTo(from, to).get();
-			exchangeValue.setPort(Integer.parseInt(env.getProperty("local.server.port")));
-			return exchangeValue;
-		}else {
-			 throw new NoValuePresentException();
-		}
+	public ExchangeValue getExchangeValue(@PathVariable String to, @PathVariable String from
+		) {
+		
+		logger.info("path varibale in exchange service --> {} from:- " + from + "to" + to);
+	
+		ExchangeValue exchangeValue = repository.findByFromAndTo(from, to).get();
+		exchangeValue.setPort(Integer.parseInt(env.getProperty("local.server.port")));
+		return exchangeValue;
+		
 	}
 
 }
