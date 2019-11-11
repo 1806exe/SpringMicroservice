@@ -1,7 +1,5 @@
 package com.config;
 
-import javax.swing.Spring;
-
 import org.apache.http.HttpHost;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
@@ -16,7 +14,7 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
 @Configuration
 @PropertySource(value = "classpath:application.properties")
 @EnableElasticsearchRepositories(basePackages = "com.dao")
-public class EsConfig extends AbstractFactoryBean{
+public class EsConfig extends AbstractFactoryBean {
 	
 	private static final Logger LOG = LoggerFactory.getLogger(EsConfig.class);
 	@Value("${spring.data.elasticsearch.cluster-nodes}")
