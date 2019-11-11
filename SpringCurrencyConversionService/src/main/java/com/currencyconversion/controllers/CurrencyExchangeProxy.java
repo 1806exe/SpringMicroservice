@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.currencyconversion.bean.CurrencyConversion;
 @RibbonClient(value = "currency-exchange-service")
+//@@FeignClient(value = "currency-exchange-service")
 @FeignClient(value = "netflix-zuul-api-gateway-server")
 public interface CurrencyExchangeProxy {
 	
