@@ -1,7 +1,0 @@
-spring.application.name=connection-service
-server.port=9001
-
-
-# bootstrap.properties
-
-spring.cloud.config.uri=http://localhost:8888

@@ -2,16 +2,20 @@
 <aop-reference-model>
 <aop-project name="spring-cloud-config-server"/>
 <aop-project name="SpringDoctors"/>
+<aop-project name="MyEurekaNamingServer"/>
 <aop-project name="HospitalService"/>
 <aop-project name="SpringCloudAPIService2"/>
+<aop-project name="SpringElasticService"/>
 <aop-project name="SpringCloudAPIService"/>
 <aop-project name="EurekaNamingServer"/>
+<aop-project name="SpringMyDoctorService"/>
 <aop-project name="MyConnectionMicroservices"/>
 <aop-project name="SpringCurrencyExchangeService"/>
 <aop-project name="SpringApiServerRoutes"/>
 <aop-project name="SpringCurrencyConversionService"/>
 <aop-project name="SpringRestPerson"/>
 <aop-project name="spring-limits"/>
+<aop-project name="SpringMyHospitalService"/>
 <aop-project name="SpringWebService"/>
 <aop-project name="SpringNetflixAPIServer"/>
 </aop-reference-model>
