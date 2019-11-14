@@ -79,8 +79,6 @@ public class ProductContoller {
 	}
 	
 	
-	
-	
 	@GetMapping("/product_access")
 	public Product getAllProduct_access() {
 		List<User> users = new ArrayList<>();
