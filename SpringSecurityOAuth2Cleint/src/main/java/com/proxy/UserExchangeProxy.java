@@ -20,6 +20,4 @@ public interface UserExchangeProxy {
 	@RequestMapping(value = "/users/user", method = RequestMethod.GET)
 	public List<User> listUser();
 	
-	
-	
 }
