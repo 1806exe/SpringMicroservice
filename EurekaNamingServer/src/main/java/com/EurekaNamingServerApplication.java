@@ -9,8 +9,6 @@ import org.springframework.stereotype.Component;
 
 @EnableEurekaServer
 @EnableDiscoveryClient
-//@EnableAutoConfiguration
-//@Component
 @SpringBootApplication
 public class EurekaNamingServerApplication {
 

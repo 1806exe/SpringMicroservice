@@ -4,6 +4,7 @@
 <aop-project name="SpringDoctors"/>
 <aop-project name="MyEurekaNamingServer"/>
 <aop-project name="HospitalService"/>
+<aop-project name="SpringSecurityOAuth2"/>
 <aop-project name="SpringCloudAPIService2"/>
 <aop-project name="SpringElasticService"/>
 <aop-project name="SpringCloudAPIService"/>
