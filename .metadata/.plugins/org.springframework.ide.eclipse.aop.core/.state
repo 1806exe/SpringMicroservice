@@ -12,9 +12,11 @@
 <aop-project name="SpringMyDoctorService"/>
 <aop-project name="MyConnectionMicroservices"/>
 <aop-project name="SpringCurrencyExchangeService"/>
+<aop-project name="SecurityMicroservice"/>
 <aop-project name="SpringApiServerRoutes"/>
 <aop-project name="SpringCurrencyConversionService"/>
 <aop-project name="SpringRestPerson"/>
+<aop-project name="SpringSecurityDB"/>
 <aop-project name="spring-limits"/>
 <aop-project name="SpringMyHospitalService"/>
 <aop-project name="SpringWebService"/>
