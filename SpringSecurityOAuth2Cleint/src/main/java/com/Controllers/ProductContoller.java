@@ -39,7 +39,6 @@ public class ProductContoller {
 	}
 	
 	
-	
 	@Bean
 	public ResourceOwnerPasswordResourceDetails getResourceDetails() {
 		ResourceOwnerPasswordResourceDetails resourceDetails = 
@@ -91,9 +90,6 @@ public class ProductContoller {
 		product.setUsers(users);
 		return product;
 	}
-	
-	
-	
 	
 	
 
