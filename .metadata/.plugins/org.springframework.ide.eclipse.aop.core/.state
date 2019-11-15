@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="MyEurekaNamingServer"/>
+<aop-project name="SpringCloudAPIService2"/>
+<aop-project name="SpringElasticService"/>
+<aop-project name="SpringMyDoctorService"/>
+<aop-project name="SpringCurrencyConversionService"/>
+<aop-project name="SpringNetflixAPIServer"/>
+<aop-project name="Saga_PaymentService-3"/>
 <aop-project name="spring-cloud-config-server"/>
 <aop-project name="SpringDoctors"/>
-<aop-project name="MyEurekaNamingServer"/>
 <aop-project name="HospitalService"/>
-<aop-project name="SpringCloudAPIService2"/>
 <aop-project name="SpringSecurityOAuth2"/>
-<aop-project name="SpringElasticService"/>
 <aop-project name="SpringCloudAPIService"/>
 <aop-project name="ELKMicroservice"/>
-<aop-project name="SpringMyDoctorService"/>
 <aop-project name="EurekaNamingServer"/>
 <aop-project name="MyConnectionMicroservices"/>
 <aop-project name="SpringCurrencyExchangeService"/>
 <aop-project name="SpringSecurityOAuth2Cleint"/>
+<aop-project name="Saga_Core_APIs-1"/>
+<aop-project name="SangaOrderService"/>
 <aop-project name="SecurityMicroservice"/>
 <aop-project name="SpringApiServerRoutes"/>
-<aop-project name="SpringCurrencyConversionService"/>
 <aop-project name="SpringRestPerson"/>
 <aop-project name="SpringSecurityDB"/>
 <aop-project name="spring-limits"/>
+<aop-project name="Saga_ShippingService-4"/>
 <aop-project name="SpringMyHospitalService"/>
 <aop-project name="SpringWebService"/>
-<aop-project name="SpringNetflixAPIServer"/>
 </aop-reference-model>

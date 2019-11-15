@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/exe/Desktop/Saga/Saga_ShiipingService-4"/>
+			<item value="/home/exe/Desktop/Saga/Saga_PaymentService-3"/>
+			<item value="/home/exe/Desktop/Saga/Saga_Core_APIs-1"/>
 			<item value="/home/exe/Desktop/A/Dev/Springs/studentdal_/studentdal "/>
 		</list>
 		<list key="projectNameTemplate">
