@@ -10,6 +10,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 
+
+@EnableOAuth2Sso
 @SpringBootApplication(scanBasePackages = "com")
 @ComponentScan(basePackages = "com")
 @EnableDiscoveryClient
@@ -17,7 +19,6 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @EnableJpaRepositories("com")
 @EnableAuthorizationServer
 @EnableAutoConfiguration
-@EnableOAuth2Sso
 public class SpringSecurityOAuth2Application {
 
 	public static void main(String[] args) {
