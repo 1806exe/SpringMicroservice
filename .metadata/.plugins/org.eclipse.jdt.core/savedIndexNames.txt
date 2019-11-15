@@ -420,7 +420,6 @@ INDEX VERSION 1.131+/home/exe/Documents/workspace-sts-3.9.10.RELEASE/.metadata/.
 3249224576.index
 739344888.index
 2301291453.index
-3848786447.index
 1528515189.index
 2664906477.index
 3476173147.index
