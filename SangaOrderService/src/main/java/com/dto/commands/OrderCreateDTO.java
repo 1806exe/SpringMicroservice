@@ -10,7 +10,7 @@ public class OrderCreateDTO {
 	private String currency;
 	
 	
-	private String getItemType() {
+	public String getItemType() {
 		return itemType;
 	}
 

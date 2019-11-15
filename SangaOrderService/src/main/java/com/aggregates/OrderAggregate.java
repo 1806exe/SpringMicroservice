@@ -27,6 +27,7 @@ public class OrderAggregate {
 		// TODO Auto-generated constructor stub
 	}
 	
+	@CommandHandler
 	public OrderAggregate(CreateOrderCommand createOrderCommand) {
 		AggregateLifecycle.apply(new OrderCreatedEvent(createOrderCommand.orderId, 
 				createOrderCommand.itemType, 
@@ -35,7 +36,7 @@ public class OrderAggregate {
 				createOrderCommand.orderStatus));
 	}
 	
-	@CommandHandler
+	@EventSourcingHandler
 	private void on(OrderCreatedEvent orderCreatedEvent) {
 		// TODO Auto-generated method stub
 		this.orderId = orderCreatedEvent.orderId;

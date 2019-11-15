@@ -13,7 +13,8 @@ import com.beans.User;
 
 
 @RibbonClient(value="my-users-service")
-@FeignClient(value="my-users-service")
+//@FeignClient(value="my-users-service")
+@FeignClient(value="netflix-zuul-api-gateway-server")
 public interface UserExchangeProxy {
 	
 	//@GetMapping(value = "/users/user")
